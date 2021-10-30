@@ -1,0 +1,32 @@
+<div class="form-product">
+
+    <h2>Registro de Producto</h2>
+
+<form (submit)="submit()" [formGroup]="registerForm">
+  <div class="form-group">
+    <label for="nombre">Nombre del producto</label>
+    <input type="text" class="form-control" formControlName="nombre">
+  </div>
+
+  <div class="form-group">
+    <label for="marca">Marca</label>
+    <input type="text" class="form-control" formControlName="marca">
+  </div>
+
+  <div class="form-group">
+    <label for="valor">Precio</label>
+    <input type="text" class="form-control" formControlName="valor">
+  </div>
+
+  <div class="form-group">
+    <label for="peso">Contenido</label>
+    <input type="text" class="form-control" formControlName="peso">
+  </div>
+
+
+  <button type="submit" class="btn btn-success" [disabled]="registerForm.invalid">Enviar</button>
+
+
+</form>
+
+

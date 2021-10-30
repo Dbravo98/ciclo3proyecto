@@ -1,0 +1,55 @@
+<div class="form-dashboard">
+  <h2>Formulario de Registro de Cliente</h2>
+
+<form (submit)="submit()" [formGroup]="registerForm">
+  <div class="form-group">
+    <label for="username">Nombres</label>
+    <input type="text" class="form-control" formControlName="username">
+  </div>
+
+  <div class="form-group">
+    <label for="apellidos">Apellidos</label>
+    <input type="text" class="form-control" formControlName="apellidos">
+  </div>
+
+  <div class="form-group">
+    <label for="cedula">Numero de Cedula</label>
+    <input type="text" class="form-control" formControlName="cedula">
+  </div>
+
+  <div class="form-group">
+    <label for="correo">Correo Electronico</label>
+    <input type="text" class="form-control" formControlName="correo">
+  </div>
+
+  <div class="form-group">
+    <label for="telefono">Telefono</label>
+    <input type="text" class="form-control" formControlName="telefono">
+  </div>
+
+  <div class="form-group">
+    <label for="direccion">Direccion</label>
+    <input type="text" class="form-control" formControlName="direccion">
+  </div>
+
+  <div class="form-group">
+    <label for="pais">Pais de residencia</label>
+    <input type="text" class="form-control" formControlName="pais">
+  </div>
+
+  <div class="form-group">
+    <label for="ciudad">Ciudad de residencia</label>
+    <input type="text" class="form-control" formControlName="ciudad">
+  </div>
+  
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" formControlName="promociones">
+    <label class="form-check-label" for="promociones">Deseo recibir promociones</label>
+  </div>
+
+  <button type="submit" class="btn btn-success" [disabled]="registerForm.invalid">Enviar</button>
+  <button type="button" class="btn btn-default" (click)="refrescar()">Refrescar</button>
+
+</form>
+
+</div>

@@ -1,0 +1,19 @@
+.form-product{
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 500px;
+    padding: 16px;
+    margin: 10px auto;
+    background: #f7f7f7;
+}
+
+.form-product h2 {
+    background: #43d1af;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    
+
+}
+
